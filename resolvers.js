@@ -11,6 +11,8 @@ export default {
   Mutation: {
     registerUser: (parent, { firstName, lastName, email, password }, { models }) =>
       userService.register(firstName, lastName, email, password),
+    loginUser: (parent, { email, password }, { models }) =>
+      userService.login(email, password),
     updateUser: (parent, { id, firstName, lastName, email, password }, { models }) =>
       models.User.update({ firstName, lastName, email, password }, { where: { id } }),
     deleteUser: (parent, { id }, { models }) =>
