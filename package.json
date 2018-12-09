@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "nodemon --exec babel-node index.js",
+    "migrate": "node_modules/.bin/sequelize db:migrate"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
     "express": "4.16.4",
     "express-graphql": "0.7.1",
     "graphql": "14.0.2",
-    "nodemon": "1.18.7"
+    "mysql2": "1.6.4",
+    "nodemon": "1.18.7",
+    "sequelize": "4.41.2",
+    "sequelize-cli": "5.4.0"
   }
 }
