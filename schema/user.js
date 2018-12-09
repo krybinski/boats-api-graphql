@@ -13,12 +13,13 @@ export default `
     user: User!
   }
 
-  type Query {
+  extend type Query {
+    me: User
     allUsers: [User!]!
     getUser(id: Int!): User
   }
 
-  type Mutation {
+  extend type Mutation {
     registerUser(firstName: String!, lastName: String!, email: String!, password: String!): User
     loginUser(email: String!, password: String!): AuthenticatedUser
     updateUser(id: Int!, firstName: String, lastName: String, email: String, password: String): [Int!]

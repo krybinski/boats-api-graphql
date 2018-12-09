@@ -1,7 +1,14 @@
-import * as userService from './services/user';
+import * as userService from '../services/user';
 
 export default {
   Query: {
+    me: (parent, args, { models, userId }) => {
+      if (userId) {
+        return models.User.findOne({ where: { id: userId }})
+      } else {
+        return null;
+      }
+    },
     allUsers: (parent, args, { models }) =>
       models.User.findAll(),
     getUser: (parent, { id }, { models }) =>
