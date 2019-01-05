@@ -1,3 +1,4 @@
 import userResolvers from './user';
+import carResolvers from './car';
 
-export default [userResolvers];
+export default [userResolvers, carResolvers];

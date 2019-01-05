@@ -1,5 +1,5 @@
 {
-  "name": "boats-api-graphql",
+  "name": "cars-api-graphql",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/krybinski/boats-api-graphql.git"
+    "url": "git+https://github.com/krybinski/cars-api-graphql.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/krybinski/boats-api-graphql/issues"
+    "url": "https://github.com/krybinski/cars-api-graphql/issues"
   },
-  "homepage": "https://github.com/krybinski/boats-api-graphql#readme",
+  "homepage": "https://github.com/krybinski/cars-api-graphql#readme",
   "dependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-latest": "6.24.1",
