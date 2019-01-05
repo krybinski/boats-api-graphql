@@ -8,8 +8,8 @@ export default {
   },
 
   Car: {
-    user: async (car, args, { models }) =>
-      models.User.findOne({ where: { id: car.userId }})
+    user: async (car, args, { loaders }) =>
+      await loaders.user.load(car.userId)
   },
 
   Mutation: {
